@@ -461,6 +461,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+/*------------------
+# f1 seccion
+*/
+
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -477,7 +483,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(6, 101, 183, 0.9);
+  background: rgba(116, 78, 9, 0.746);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -503,6 +509,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
 }
+#hero .carousel-container .f1 {
+  color: red;
+}
+
 
 #hero p {
   width: 80%;
@@ -527,7 +537,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
@@ -535,7 +545,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
   line-height: 1;
   margin: 10px;
-  color: #fff;
+  color: rgb(7, 7, 7);
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   border: 2px solid #f6b024;
