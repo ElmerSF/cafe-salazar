@@ -44,7 +44,7 @@ objetivo.innerHTML = horacompleta;
 
 //frase celebre
 var archivoTxt = new XMLHttpRequest();
-var fileRuta = './assets/js/frases.txt';
+var fileRuta = '../assets/js/frases.txt';
 archivoTxt.open("GET", fileRuta, false);
 archivoTxt.send(null);
 var txt = archivoTxt.responseText;
