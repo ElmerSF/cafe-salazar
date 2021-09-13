@@ -56,4 +56,36 @@ function generarRandom(){
 }
 var frase = document.getElementById('frase');
 frase.innerHTML = linea[generarRandom()];
+//fin frase celebre
 
+//frase biblica
+var documentoTxt = new XMLHttpRequest();
+var filebibliaRuta =  "./assets/js/Biblia.txt";
+documentoTxt.open("GET", filebibliaRuta, false);
+documentoTxt.send(null);
+var txt2 = documentoTxt.responseText;
+var linea2 = txt2.split(/\r\n|\n/);
+function generarRandom2(){
+    var min= 1,
+        max =135;
+    return parseInt(Math.random()*(max - min)+min);
+}
+var frasebiblica = document.getElementById('biblia');
+frasebiblica.innerHTML = linea2[generarRandom2()];
+//fin de frase biblica
+
+//inicio de chiste
+var documenTxt = new XMLHttpRequest();
+var filechiste =  "./assets/js/chistes.txt";
+documenTxt.open("GET", filechiste, false);
+documenTxt.send(null);
+var txt3 = documenTxt.responseText;
+var linea3 = txt3.split(/\r\n|\n/);
+function generarRandom3(){
+    var min= 1,
+        max =113;
+    return parseInt(Math.random()*(max - min)+min);
+}
+var chiste = document.getElementById('chiste');
+chiste.innerHTML = linea3[generarRandom3()];
+//fin de chiste
