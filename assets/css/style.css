@@ -652,6 +652,10 @@ section {
   margin-bottom: 0;
   color: #777777;
 }
+.icon-boxes .fecha h2 {
+font-size: 72px;
+color: #05579e;
+}
 
 /*--------------------------------------------------------------
 # About Us
