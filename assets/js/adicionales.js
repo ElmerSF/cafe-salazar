@@ -2,11 +2,7 @@
 Este script son algunas funciones adicionales que agregue a discreción
 */
 
-/*switch (expresión) {
-    case valor1:
-      //Declaraciones ejecutadas cuando el resultado de expresión coincide con el valor1
-      [break;]
-*/
+
 //insertar fecha
 var fecha = new Date();
 var dia = fecha.getDate();
@@ -48,7 +44,7 @@ objetivo.innerHTML = horacompleta;
 
 //frase celebre
 var archivoTxt = new XMLHttpRequest();
-var fileRuta = '/assets/js/frases.txt';
+var fileRuta = './assets/js/frases.txt';
 archivoTxt.open("GET", fileRuta, false);
 archivoTxt.send(null);
 var txt = archivoTxt.responseText;
@@ -60,5 +56,4 @@ function generarRandom(){
 }
 var frase = document.getElementById('frase');
 frase.innerHTML = linea[generarRandom()];
-//console.log(generarRandom());
-//fin de frase celebre
+
