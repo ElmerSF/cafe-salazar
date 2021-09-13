@@ -50,14 +50,14 @@ objetivo.innerHTML = horacompleta;
 
 
 //frase celebre
-const API_URL ='https://frasedeldia.azurewebsites.net/api/phrase'
+const API_URL ='Access-Control-Allow-Origin: https://frasedeldia.azurewebsites.net/api/phrase'
 const xhr = new XMLHttpRequest();
 function onRequestHandler(){
     if (this.readySate ===4 && this.status ===200)
 console.log(this.response)
 }
 xhr.addEventListener("load", onRequestHandler);
-xhr.open('GET',  "${API_URL}");
+xhr.open('GET',  API_URL);
 xhr.send();
 
 
