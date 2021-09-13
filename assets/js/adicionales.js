@@ -8,12 +8,10 @@ Este script son algunas funciones adicionales que agregue a discreción
       [break;]
 */
 //insertar fecha
-
 var fecha = new Date();
 var dia = fecha.getDate();
 var diaresultado = document.getElementById('dia');
 diaresultado.innerHTML = dia;
-
 var mes = (fecha.getUTCMonth()+1);
 switch (mes){
 case (mes =1): mes = 'Enero'; break;
@@ -31,6 +29,7 @@ case (mes =12): mes = 'Diciembre'; break;
 }
 var mesresultado = document.getElementById('mes');
 mesresultado.innerHTML = mes;
+//fin de fecha
 
 // insertar reloj
 var horas = fecha.getHours();
@@ -40,25 +39,26 @@ if (horas>12)
 tardes = ' pm';
 }
 else{ tardes = ' am';}
-
 var minutos = fecha.getMinutes();
 if (minutos<10){minutos = '0'+minutos;}
 var horacompleta = horas+":"+minutos+':'+tardes;
-
 var objetivo = document.getElementById('clock');
 objetivo.innerHTML = horacompleta;
-
+//fin de reloj
 
 //frase celebre
-const API_URL ='Access-Control-Allow-Origin: https://frasedeldia.azurewebsites.net/api/phrase'
-const xhr = new XMLHttpRequest();
-function onRequestHandler(){
-    if (this.readySate ===4 && this.status ===200)
-console.log(this.response)
+var archivoTxt = new XMLHttpRequest();
+var fileRuta = '/assets/js/frases.txt';
+archivoTxt.open("GET", fileRuta, false);
+archivoTxt.send(null);
+var txt = archivoTxt.responseText;
+var linea = txt.split(/\r\n|\n/);
+function generarRandom(){
+    var min= 1,
+        max =165;
+    return parseInt(Math.random()*(max - min)+min);
 }
-xhr.addEventListener("load", onRequestHandler);
-xhr.open('GET',  API_URL);
-xhr.send();
-
-
-
+var frase = document.getElementById('frase');
+frase.innerHTML = linea[generarRandom()];
+//console.log(generarRandom());
+//fin de frase celebre
