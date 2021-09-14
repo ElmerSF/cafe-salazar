@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo {
-  font-size: 32px;
+  font-size: 12px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -202,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 50px;
 }
 
 @media (max-width: 992px) {
@@ -1604,7 +1604,7 @@ color: #05579e;
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type="submit"] {
+.boton_de_contacto button[type="submit"] {
   border: 0;
   padding: 10px 32px;
   color: #0880e8;
@@ -1614,7 +1614,7 @@ color: #05579e;
   background: #fff;
 }
 
-.contact .php-email-form button[type="submit"]:hover {
+.boton_de_contacto button[type="submit"]:hover {
   background: #0880e8;
   color: #fff;
 }
