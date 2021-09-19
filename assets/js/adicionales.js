@@ -25,6 +25,7 @@ case (mes =12): mes = 'Diciembre'; break;
 }
 var mesresultado = document.getElementById('mes');
 mesresultado.innerHTML = mes;
+
 //fin de fecha
 
 // insertar reloj
@@ -89,3 +90,25 @@ function generarRandom3(){
 var chiste = document.getElementById('chiste');
 chiste.innerHTML = linea3[generarRandom3()];
 //fin de chiste
+
+var fecha = new Date();
+var dia = fecha.getDate();
+var diaresultado = document.getElementById('dia');
+diaresultado.innerHTML = dia;
+var mes = (fecha.getUTCMonth()+1);
+switch (mes){
+case (mes =1): mes = 'Enero'; break;
+case (mes =2): mes = 'Febrero'; break;
+case (mes =3): mes = 'Marzo'; break;
+case (mes =4): mes = 'Abril'; break;
+case (mes =5): mes = 'Mayo'; break;
+case (mes =6): mes = 'Junio'; break;
+case (mes =7): mes = 'Julio'; break;
+case (mes =8): mes = 'Agosto'; break;
+case (mes =9): mes = 'Septiembre'; break;
+case (mes =10): mes = 'Octubre'; break;
+case (mes =11): mes = 'Noviembre'; break;
+case (mes =12): mes = 'Diciembre'; break;
+}
+var mesresultado = document.getElementById('messuperior');
+mesresultado.innerHTML = mes;

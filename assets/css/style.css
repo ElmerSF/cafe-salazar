@@ -789,32 +789,32 @@ color: #05579e;
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
-.why-us {
+.Recomendacion {
   background: #f1f8ff;
   padding: 0;
 }
 
-.why-us .content {
+.Recomendacion .content {
   padding: 60px 100px 0 100px;
 }
 
-.why-us .content h3 {
+.Recomendacion .content h3 {
   font-weight: 400;
   font-size: 34px;
 }
 
-.why-us .content h4 {
+.Recomendacion .content h4 {
   font-size: 20px;
   font-weight: 700;
   margin-top: 5px;
 }
 
-.why-us .content p {
+.Recomendacion .content p {
   font-size: 15px;
   color: #848484;
 }
 
-.why-us .video-box {
+.Recomendacion .video-box {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -822,26 +822,26 @@ color: #05579e;
   position: relative;
 }
 
-.why-us .accordion-list {
+.Recomendacion .accordion-list {
   padding: 0 100px 60px 100px;
 }
 
-.why-us .accordion-list ul {
+.Recomendacion .accordion-list ul {
   padding: 0;
   list-style: none;
 }
 
-.why-us .accordion-list li + li {
+.Recomendacion .accordion-list li + li {
   margin-top: 15px;
 }
 
-.why-us .accordion-list li {
+.Recomendacion .accordion-list li {
   padding: 20px;
   background: #fff;
   border-radius: 4px;
 }
 
-.why-us .accordion-list a {
+.Recomendacion .accordion-list a {
   display: block;
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -852,46 +852,46 @@ color: #05579e;
   outline: none;
 }
 
-.why-us .accordion-list span {
+.Recomendacion .accordion-list span {
   color: #0880e8;
   font-weight: 600;
   font-size: 18px;
   padding-right: 10px;
 }
 
-.why-us .accordion-list i {
+.Recomendacion .accordion-list i {
   font-size: 24px;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.why-us .accordion-list p {
+.Recomendacion .accordion-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
 }
 
-.why-us .accordion-list .icon-show {
+.Recomendacion .accordion-list .icon-show {
   display: none;
 }
 
-.why-us .accordion-list a.collapsed {
+.Recomendacion .accordion-list a.collapsed {
   color: #343a40;
 }
 
-.why-us .accordion-list a.collapsed:hover {
+.Recomendacion .accordion-list a.collapsed:hover {
   color: #0880e8;
 }
 
-.why-us .accordion-list a.collapsed .icon-show {
+.Recomendacion .accordion-list a.collapsed .icon-show {
   display: inline-block;
 }
 
-.why-us .accordion-list a.collapsed .icon-close {
+.Recomendacion .accordion-list a.collapsed .icon-close {
   display: none;
 }
 
-.why-us .play-btn {
+.Recomendacion .play-btn {
   width: 94px;
   height: 94px;
   background: radial-gradient(#0880e8 50%, rgba(8, 128, 232, 0.4) 52%);
@@ -903,7 +903,7 @@ color: #05579e;
   overflow: hidden;
 }
 
-.why-us .play-btn::after {
+.Recomendacion .play-btn::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -918,7 +918,7 @@ color: #05579e;
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-.why-us .play-btn::before {
+.Recomendacion .play-btn::before {
   content: '';
   position: absolute;
   width: 120px;
@@ -941,12 +941,12 @@ color: #05579e;
   background: rgba(198, 16, 0, 0);
 }
 
-.why-us .play-btn:hover::after {
+.Recomendacion .play-btn:hover::after {
   border-left: 15px solid #0880e8;
   transform: scale(20);
 }
 
-.why-us .play-btn:hover::before {
+.Recomendacion .play-btn:hover::before {
   content: '';
   position: absolute;
   left: 50%;
@@ -965,17 +965,17 @@ color: #05579e;
 }
 
 @media (max-width: 1024px) {
-  .why-us .content, .why-us .accordion-list {
+  .Recomendacion .content, .Recomendacion .accordion-list {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 @media (max-width: 992px) {
-  .why-us .content {
+  .Recomendacion .content {
     padding-top: 30px;
   }
-  .why-us .accordion-list {
+  .Recomendacion .accordion-list {
     padding-bottom: 30px;
   }
 }
